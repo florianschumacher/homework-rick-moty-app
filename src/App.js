@@ -38,8 +38,9 @@ function App() {
             <Aliens key={id} name={name} imgUrl={image} species={species} />
           ))}
         {currentPage === "video" && <Video />}
-        <Navigation onNavigate={setCurrentPage} />
+        
       </Contentbox>
+      <Navigation onNavigate={setCurrentPage} />
     </div>
   );
 }
@@ -47,7 +48,10 @@ function App() {
 export default App;
 
 const Contentbox = styled.div`
-  display: block;
-  margin-top: 80px;
-  margin-bottom: 120px;
+  display: grid;
+  grid-template-columns: repeat(3,32%);
+  grid-gap: 0.125em;
+  margin-top: 65px;
+  margin-left:0.5em;
+  z-index: -1;
 `;

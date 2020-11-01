@@ -4,7 +4,7 @@ import React from 'react'
 export default function Character({name, imgUrl, species}) {
   return (
     <CharacterContainer>
-      <h3>{name}</h3>
+      <h5>{name}</h5>
       <p>{species}</p>
       <img src={imgUrl} alt="" />
     </CharacterContainer>
@@ -14,12 +14,28 @@ export default function Character({name, imgUrl, species}) {
 const CharacterContainer = styled.section`
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    align-content: center;
     width: 100%;
-    bottom: 2px;
     padding: 10px;
     border: 1px solid gray;
     border-radius: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 0.125em;
     background-color: yellow;
-    `
+    h5 {
+      margin: 5px;
+      margin-bottom: 0px;
+      margin-top: 0px;
+      margin-left: 0px;
+      font-size-adjust: auto;
+      overflow: hidden; 
+      max-height: 1em;
+      text-overflow: clip; 
+    }
+    p {
+      margin: 5px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      font-size: 0.75em;
+  }
+`

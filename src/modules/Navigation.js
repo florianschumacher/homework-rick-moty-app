@@ -18,12 +18,12 @@ export default function Navigation({ onNavigate }) {
 
 const NavigationContainer = styled.div`
   position: fixed;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  height: 100px;
+  display: grid;
+  grid-template-columns: repeat(3,33%);
+  grid-gap: 0.125em;
+  height: 80px;
   width: 100%;
-  bottom: 2px;
+  bottom: 0px;
   background-color: lime;
   border-radius: 10px;
   z-index: 10;
