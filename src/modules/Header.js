@@ -16,6 +16,7 @@ const HeaderContainer = styled.div`
   height: 60px;
   width: 100%;
   background-color: lime;
+  -webkit-text-stroke: 0.01em black;
   text-align: center;
   font-family: Georgia, "Times New Roman", Times, serif;
   color: yellow;

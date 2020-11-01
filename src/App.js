@@ -12,6 +12,7 @@ function App() {
   const [characters, setCharacters] = useState([]);
   const [aliens, setAliens] = useState([]);
   const [currentPage, setCurrentPage] = useState("home");
+  const subheadline = "subheadline"
 
   useEffect(() => {
     getCharacters()
@@ -24,6 +25,7 @@ function App() {
       .then((data) => setAliens(data.results))
       .catch((error) => console.log(error));
   }, []);
+
 
   return (
     <div className="App">

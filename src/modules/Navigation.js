@@ -21,7 +21,7 @@ const NavigationContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(3,33%);
   grid-gap: 0.125em;
-  height: 80px;
+  height: 70px;
   width: 100%;
   bottom: 0px;
   background-color: lime;
@@ -36,5 +36,5 @@ const Navigationitem = styled.button`
   background-color: yellow;
   color: green;
   border-radius: 10px;
-  margin-top: 20px;
+  margin-top: 10px;
 `;
